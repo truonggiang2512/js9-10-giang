@@ -143,10 +143,10 @@ document.getElementById("btnCapNhat").onclick = function () {
       break;
     }
   }
-  // let isValid = Validation();
-  // if (!isValid) {
-  //   return;
-  // }
+  let isValid = Validation();
+  if (!isValid) {
+    return;
+  }
   document.getElementById("tknv").disabled = false;
   document.getElementById("btnThemNV").disabled = false;
   luuStorage();
